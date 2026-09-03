@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    /* Sky blue cloudy theme */
+    background: linear-gradient(
+        to bottom,
+        #87CEEB,
+        #B0E0E6,
+        #E6F7FF
+    );
+
+    min-height: 100vh;
+}
+
+/* Main title */
+h1 {
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+/* Section headings */
+h2 {
+    color: #1f4e79;
+    margin-top: 30px;
+}
+
+/* Search form */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 260px;
+    padding: 12px 15px;
+    border: 1px solid #b0d8e8;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4aa3df;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f8fcf;
+}
+
+/* Current weather card */
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 18px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.weather-card h2 {
+    margin-top: 0;
+}
+
+.weather-card p {
+    font-size: 17px;
+}
+
+/* Forecast cards */
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.forecast-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 170px;
+    padding: 15px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Search history */
+.history-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.history-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 180px;
+    padding: 15px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.history-card form {
+    margin: 0;
+}
+
+.city-button {
+    margin: 0;
+    width: 100%;
+}
+
+/* Error message */
+.error-message {
+    color: #b3261e;
+    background-color: rgba(255, 240, 240, 0.9);
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
+.clear-button {
+    background-color: #4aa3df;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.clear-button:hover {
+    background-color: #2f8fcf;
+}
